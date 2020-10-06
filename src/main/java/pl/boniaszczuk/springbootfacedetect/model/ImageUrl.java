@@ -14,6 +14,12 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "url"
 })
 public class ImageUrl {
+    public ImageUrl() {
+    }
+
+    public ImageUrl(String url) {
+        this.url = url;
+    }
 
     @JsonProperty("url")
     private String url;
