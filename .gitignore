@@ -20,15 +20,15 @@ src/main/resources/application.properties
 *.iml
 *.ipr
 .mvn
-target
-HELP.md
-mvnw
-mvnw.cmd
-package-lock.json
-package.json
-springboot-face-detect.iml
-webpack.config.js
-webpack.generated.js
+.target
+.HELP.md
+.mvnw
+.mvnw.cmd
+.package-lock.json
+.package.json
+.springboot-face-detect.iml
+.webpack.config.js
+.webpack.generated.js
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
