@@ -19,7 +19,16 @@ src/main/resources/application.properties
 *.iws
 *.iml
 *.ipr
-
+.mvn
+target
+HELP.md
+mvnw
+mvnw.cmd
+package-lock.json
+package.json
+springboot-face-detect.iml
+webpack.config.js
+webpack.generated.js
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

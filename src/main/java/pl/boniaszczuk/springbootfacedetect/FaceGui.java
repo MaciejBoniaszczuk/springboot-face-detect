@@ -23,8 +23,6 @@ public class FaceGui  extends VerticalLayout {
             grid.addColumn(c -> c.getFaceAttributes().getAge()).setHeader("Age");
             grid.addColumn(c -> c.getFaceAttributes().getEmotion()).setHeader("Emotion").setWidth("1000px");
             add(new Image(textField.getValue(), textField.getValue()));
-
-
         });
         add(textField, button, grid);
     }
