@@ -11,6 +11,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.client.RestTemplate;
 import pl.boniaszczuk.springbootfacedetect.model.ImageUrl;
 
+import java.util.stream.Stream;
+
 @Controller
 public class FaceApiClient {
     @Value("${apiKey}")
@@ -27,7 +29,8 @@ public class FaceApiClient {
         httpHeaders.add("Ocp-Apim-Subscription-Key",apiKey);
         HttpEntity<ImageUrl> imageUrlHttpEntity = new HttpEntity<>(imageUrl, httpHeaders);
         ResponseEntity<String> exchange = restTemplate.exchange(FACE_API_URL, HttpMethod.POST, imageUrlHttpEntity, String.class);
-        System.out.println(exchange.getBody());
+
+        Stream.of(exchange.getBody()).forEach(System.out::println);
     }
 
 }
